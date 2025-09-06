@@ -13,7 +13,7 @@ This repo is for DSA Practice
 
 ## September 7, 2025
 
-**Selection Sort** --- September 7, 2025, 12:00 PM
+**Selection Sort** --- September 6, 2025, 10:30 PM
 - Implemented selection sort algorithm
 - LeetCode 75: Sort Colors using selection sort
 - LeetCode 215: Kth Largest Element in an Array using selection sort

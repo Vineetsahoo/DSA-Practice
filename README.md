@@ -2,7 +2,7 @@
 
 This repo is for DSA Practice
 
-## September 5, 2025
+## September 4, 2025
 
 **Insertion Sort** --- September 4, 2025, 11:42 PM
 - Implemented insertion sort algorithm

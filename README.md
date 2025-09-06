@@ -11,7 +11,7 @@ This repo is for DSA Practice
 - Decimal to binary conversion
 - Array sorting in ascending and descending order
 
-## September 7, 2025
+## September 6, 2025
 
 **Selection Sort** --- September 6, 2025, 10:30 PM
 - Implemented selection sort algorithm

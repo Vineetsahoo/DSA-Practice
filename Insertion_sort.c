@@ -1,6 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int A[] = {31, 41, 59, 26, 41, 58};
+
+// Definition for singly-linked list (for LeetCode 147)
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
 
 // INSERTION SORT ALGORITHM
 void insertion_sort(int A[], int n) {
@@ -71,6 +78,64 @@ void binary_addition(int A[], int B[], int C[], int n) {
 int decimal_A = 10;  // 10 in decimal = 1010 in binary
 int decimal_B = 11;  // 11 in decimal = 1011 in binary 
 
+// LEETCODE 147: Insertion Sort List
+struct ListNode* insertionSortList(struct ListNode* head) {
+    if (!head || !head->next) return head; // If list is empty or has one node, it's already sorted
+    
+    // Create a dummy node to simplify insertion
+    struct ListNode dummy;
+    dummy.next = NULL; // Fake head of the sorted list
+    
+    struct ListNode* current = head; // Current node to be inserted
+    
+    while (current) {
+        struct ListNode* next = current->next;  // Save next node
+        
+        // Find the correct position to insert current node
+        struct ListNode* prev = &dummy; // prev points to the dummy node
+
+        while (prev->next && prev->next->val < current->val) { // prev->next->val is the value of Unsorted list node & current->val is the value of Sorted list node
+            prev = prev->next; // Move prev forward in the sorted list
+        }
+        
+        // Insert current node after prev
+        current->next = prev->next; // Connecting current to next in sorted list
+        prev->next = current; // Connecting prev to current in the sorted list
+        
+        current = next;  // Move to next node 
+    }
+    
+    return dummy.next; // Return the sorted list, which starts at dummy.next
+} 
+
+// Helper function to create a new ListNode
+struct ListNode* createNode(int val) {
+    struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
+    newNode->val = val;
+    newNode->next = NULL;
+    return newNode;
+}
+
+// Helper function to print linked list
+void printList(struct ListNode* head) { // head is a pointer to the first node
+    struct ListNode* current = head; // current is used to traverse the list
+    while (current) {
+        printf("%d", current->val); // Print current node's value
+        if (current->next) printf(" -> "); // Print arrow if not the last node
+        current = current->next; // Move current to the next node
+    }
+    printf("\n");
+}
+
+// Helper function to free linked list memory
+void freeList(struct ListNode* head) {
+    while (head) {
+        struct ListNode* temp = head;
+        head = head->next;
+        free(temp);
+    }
+} 
+
 
 int main() {
     int n = sizeof(A) / sizeof(A[0]);
@@ -84,7 +149,7 @@ int main() {
 
     insertion_sort(A, n);
     
-    printf("Array sorted in ascending order: ");
+    printf("Array sorted in ascending order: \n");
     // print_array(A, n);
     for (int i = 0; i < n; i++) {
         printf("%d ", A[i]);
@@ -137,6 +202,27 @@ int main() {
     }
     printf("Decimal Sum = %d (Verification: %d + %d = %d)\n", 
            result_decimal, decimal_A, decimal_B, decimal_A + decimal_B);
+    
+    // LeetCode 147: Insertion Sort List Demo
+    printf("\n=== LEETCODE 147: INSERTION SORT LIST ===\n");
+    
+    // Create a test linked list: 4 -> 2 -> 1 -> 3
+    struct ListNode* head = createNode(4);
+    head->next = createNode(2);
+    head->next->next = createNode(1);
+    head->next->next->next = createNode(3);
+    
+    printf("Original linked list: ");
+    printList(head);
+    
+    // Sort the linked list
+    struct ListNode* sortedHead = insertionSortList(head);
+    
+    printf("Sorted linked list: ");
+    printList(sortedHead);
+    
+    // Free memory
+    freeList(sortedHead);
 
     return 0;
 }

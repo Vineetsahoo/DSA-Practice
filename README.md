@@ -42,7 +42,7 @@ This repo is for DSA Practice
 
 ## September 8, 2025
 
-**Merge Sort with Linked List** --- September 8, 2025, 12:00 PM
+**Merge Sort with Linked List** --- September 8, 2025, 10:30 PM
 - Implemented merge sort for singly linked list
 - Created helper functions: createNode, printList, freeList
 - Simple logic approach: findMiddle using node counting (no fast/slow pointers)

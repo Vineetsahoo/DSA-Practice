@@ -40,6 +40,16 @@ This repo is for DSA Practice
 - Fixed array indexing bug (A[j] vs B[j])
 - Time complexity: O(n log n)
 
+## September 8, 2025
+
+**Merge Sort with Linked List** --- September 8, 2025, 12:00 PM
+- Implemented merge sort for singly linked list
+- Created helper functions: createNode, printList, freeList
+- Simple logic approach: findMiddle using node counting (no fast/slow pointers)
+- mergeTwoSortedLists function to merge two sorted linked lists
+- mergeSortLinkedList recursive function for divide and conquer
+- Successfully sorted linked list: 64→34→25→12→22→11→90 to 11→12→22→25→34→64→90
+
 ## File Structure
 ```
 dsa Practice/

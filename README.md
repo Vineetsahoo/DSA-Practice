@@ -50,6 +50,13 @@ This repo is for DSA Practice
 - mergeSortLinkedList recursive function for divide and conquer
 - Successfully sorted linked list: 64→34→25→12→22→11→90 to 11→12→22→25→34→64→90
 
+## September 9, 2025
+
+**Merge Sort with LeetCode** --- September 9, 2025, 4:15 PM
+- LeetCode 21: Merge Two Sorted Lists using merge sort merge step
+- LeetCode 23: Merge K Sorted Lists using divide and conquer approach
+- Merge_sort.c with LeetCode solutions
+
 ## File Structure
 ```
 dsa Practice/

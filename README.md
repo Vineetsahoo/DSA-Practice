@@ -55,7 +55,21 @@ This repo is for DSA Practice
 **Merge Sort with LeetCode** --- September 9, 2025, 4:15 PM
 - LeetCode 21: Merge Two Sorted Lists using merge sort merge step
 - LeetCode 23: Merge K Sorted Lists using divide and conquer approach
-- Merge_sort.c with LeetCode solutions
+- Enhanced Merge_sort.c with LeetCode solutions
+- Fixed code bugs and variable naming conflicts
+
+**Bubble Sort** --- September 9, 2025, 8:30 PM
+- Implemented bubble sort algorithm with optimized version
+- LeetCode 977: Squares of Sorted Array using bubble sort
+- LeetCode 1051: Height Checker using bubble sort
+- Enhanced Bubble_sort.c with LeetCode solutions
+
+**Quick Sort** --- September 9, 2025, 10:05 PM
+- Implemented quick sort algorithm with partition function
+- LeetCode 912: Sort an Array using quick sort
+- LeetCode 347: Top K Frequent Elements using quick sort with frequency counting
+- Enhanced Quick_Sort.c with LeetCode solutions
+- Used parallel arrays for frequency-based sorting
 
 ## File Structure
 ```
@@ -64,6 +78,10 @@ dsa Practice/
 ├── Insertion_sort.c
 ├── Selection_sort.c
 ├── Merge_sort.c
+├── Bubble_sort.c
+├── Quick_Sort.c
 ├── merge_sort.exe
+├── bubble_sort_updated.exe
+├── quick_sort_updated.exe
 └── README.md
 ```

@@ -71,17 +71,38 @@ This repo is for DSA Practice
 - Enhanced Quick_Sort.c with LeetCode solutions
 - Used parallel arrays for frequency-based sorting
 
+## September 10, 2025
+
+**Project Organization** --- September 10, 2025, 12:01 AM
+- Created automation scripts for better project organization
+- Added compile.bat and compile.ps1 for automated compilation
+- Added move_exe.bat and move_exe.ps1 for organizing executable files
+- Created output folder to store all generated executable files
+- Improved project structure and file management
+
 ## File Structure
 ```
 dsa Practice/
-├── a.exe
-├── Insertion_sort.c
-├── Selection_sort.c
-├── Merge_sort.c
-├── Bubble_sort.c
-├── Quick_Sort.c
-├── merge_sort.exe
-├── bubble_sort_updated.exe
-├── quick_sort_updated.exe
+├── .vscode/
+├── Sorting_echniques/
+│   ├── Bubble_sort.c
+│   ├── Insertion_sort.c
+│   ├── Merge_sort.c
+│   ├── Quick_Sort.c
+│   └── Selection_sort.c
+├── output/
+│   ├── a.exe
+│   ├── bubble_sort_updated.exe
+│   ├── merge_sort.exe
+│   ├── merge_sort_updated.exe
+│   └── quick_sort_updated.exe
+├── move_exe.bat
+├── move_exe.ps1
 └── README.md
 ```
+
+## Usage Instructions
+
+### Organization Scripts
+- **Move Executables**: `.\move_exe.bat` or `.\move_exe.ps1`
+  - Automatically moves all .exe files to output folder

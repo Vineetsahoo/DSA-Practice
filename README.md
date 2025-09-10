@@ -80,22 +80,27 @@ This repo is for DSA Practice
 - Created output folder to store all generated executable files
 - Improved project structure and file management
 
+**Two Pointer Techniques** --- September 10, 2025, 12:30 AM
+- Started practicing array-based two pointer techniques
+- LeetCode 26: Remove Duplicates from Sorted Array using two pointer approach
+- Enhanced Remove_Duplicates.c with LeetCode solution
+- Created 2_pointer_techniques folder for organized practice
+
 ## File Structure
 ```
 dsa Practice/
+├── .git/
 ├── .vscode/
-├── Sorting_echniques/
+├── 2_pointer_techniques/
+│   └── Remove_Duplicates.c
+├── Sorting_techniques/
 │   ├── Bubble_sort.c
 │   ├── Insertion_sort.c
 │   ├── Merge_sort.c
 │   ├── Quick_Sort.c
 │   └── Selection_sort.c
 ├── output/
-│   ├── a.exe
-│   ├── bubble_sort_updated.exe
-│   ├── merge_sort.exe
-│   ├── merge_sort_updated.exe
-│   └── quick_sort_updated.exe
+│   └── (executable files generated from compilation)
 ├── move_exe.bat
 ├── move_exe.ps1
 └── README.md

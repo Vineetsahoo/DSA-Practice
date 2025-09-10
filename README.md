@@ -80,7 +80,7 @@ This repo is for DSA Practice
 - Created output folder to store all generated executable files
 - Improved project structure and file management
 
-**Two Pointer Techniques** --- September 10, 2025, 12:30 AM
+**Two Pointer Techniques** --- September 10, 2025, 10:33 AM
 - Started practicing array-based two pointer techniques
 - LeetCode 26: Remove Duplicates from Sorted Array using two pointer approach
 - Enhanced Remove_Duplicates.c with LeetCode solution

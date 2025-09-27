@@ -86,13 +86,25 @@ This repo is for DSA Practice
 - Enhanced Remove_Duplicates.c with LeetCode solution
 - Created 2_pointer_techniques folder for organized practice
 
+## September 27, 2025
+
+**Palindrome Problems Complete** --- September 27, 2025, 10:30 PM
+- Advanced two pointer techniques for palindrome problems
+- LeetCode 125: Valid Palindrome with alphanumeric filtering and helper functions
+- LeetCode 680: Valid Palindrome II with one character deletion strategy
+- LeetCode 647: Palindromic Substrings using expand around centers technique
+- Created comprehensive Plaindrome.c with multiple palindrome algorithms
+- Implemented helper functions: isAlphanumeric(), toLowerCase(), expandAroundCenter()
+- Mastered different two-pointer patterns: validation, modification, and counting
+
 ## File Structure
 ```
 dsa Practice/
 ├── .git/
 ├── .vscode/
 ├── 2_pointer_techniques/
-│   └── Remove_Duplicates.c
+│   ├── Remove_Duplicates.c
+│   └── Plaindrome.c
 ├── Sorting_techniques/
 │   ├── Bubble_sort.c
 │   ├── Insertion_sort.c

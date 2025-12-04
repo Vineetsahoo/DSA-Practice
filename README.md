@@ -97,6 +97,20 @@ This repo is for DSA Practice
 - Implemented helper functions: isAlphanumeric(), toLowerCase(), expandAroundCenter()
 - Mastered different two-pointer patterns: validation, modification, and counting
 
+## December 3-4, 2025
+
+**Sliding Window Technique** --- December 3, 2025, 11:30 PM
+- Started learning sliding window pattern for subarray problems
+- Implemented basic sliding window for maximum sum of subarray
+- LeetCode 643: Maximum Average Subarray I using fixed window sliding technique
+- Created Sliding_Window.c with comprehensive implementations
+
+**Sliding Window Advanced** --- December 4, 2025, 11:05 PM
+- LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+- Mastered counting subarrays that meet specific conditions
+- Learned optimization: comparing sums instead of calculating averages
+- Understanding fixed vs variable window patterns
+
 ## File Structure
 ```
 dsa Practice/
@@ -104,7 +118,8 @@ dsa Practice/
 ├── .vscode/
 ├── 2_pointer_techniques/
 │   ├── Remove_Duplicates.c
-│   └── Plaindrome.c
+│   ├── Plaindrome.c
+│   └── Sliding_Window.c
 ├── Sorting_techniques/
 │   ├── Bubble_sort.c
 │   ├── Insertion_sort.c

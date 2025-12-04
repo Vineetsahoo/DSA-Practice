@@ -105,11 +105,14 @@ This repo is for DSA Practice
 - LeetCode 643: Maximum Average Subarray I using fixed window sliding technique
 - Created Sliding_Window.c with comprehensive implementations
 
-**Sliding Window Advanced** --- December 4, 2025, 11:05 PM
+**Sliding Window Advanced** --- December 4, 2025, 11:15 AM
 - LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
+- LeetCode 1876: Substrings of Size Three with Distinct Characters
+- LeetCode 2269: Find the K-Beauty of a Number
 - Mastered counting subarrays that meet specific conditions
 - Learned optimization: comparing sums instead of calculating averages
-- Understanding fixed vs variable window patterns
+- Understanding fixed window patterns across arrays, strings, and numbers
+- Practiced string-to-integer conversion and divisibility checking
 
 ## File Structure
 ```

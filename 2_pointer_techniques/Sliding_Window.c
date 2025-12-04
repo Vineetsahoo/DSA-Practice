@@ -73,6 +73,66 @@ int numOfSubarrays(int arr[], int arrSize, int k, int threshold) {
     return count;
 }
 
+// ========== LEETCODE 1876: SUBSTRINGS OF SIZE THREE WITH DISTINCT CHARACTERS ==========
+
+// LeetCode 1876: Substrings of Size Three with Distinct Characters
+int countGoodSubstrings(char* s) {
+    int count = 0;
+    int len = 0;
+    
+    // Find string length
+    while (s[len] != '\0') {
+        len++;
+    }
+    
+    // If string length is less than 3, no valid substrings
+    if (len < 3) {
+        return 0;
+    }
+    
+    // Check each window of size 3
+    for (int i = 0; i <= len - 3; i++) {
+        // Check if all three characters are distinct
+        if (s[i] != s[i + 1] && s[i] != s[i + 2] && s[i + 1] != s[i + 2]) {
+            count++;
+        }
+    }
+    
+    return count;
+}
+
+// ========== LEETCODE 2269: FIND THE K-BEAUTY OF A NUMBER ==========
+
+// LeetCode 2269: Find the K-Beauty of a Number
+int divisorSubstrings(int num, int k) {
+    // Convert number to string
+    char str[15];
+    sprintf(str, "%d", num);
+    
+    int len = 0;
+    while (str[len] != '\0') {
+        len++;
+    }
+    
+    int count = 0;
+    
+    // Slide window of size k
+    for (int i = 0; i <= len - k; i++) {
+        // Extract k-digit substring
+        int substring = 0;
+        for (int j = i; j < i + k; j++) {
+            substring = substring * 10 + (str[j] - '0');
+        }
+        
+        // Check if substring divides num and is not zero
+        if (substring != 0 && num % substring == 0) {
+            count++;
+        }
+    }
+    
+    return count;
+}
+
 int main() {
     int arr[] = {2, 1, 5, 1, 3, 2};
     int n = sizeof(arr)/sizeof(arr[0]);
@@ -184,6 +244,80 @@ int main() {
     }
     printf("], k = %d, threshold = %d\n", k_3, threshold3);
     printf("Output: %d\n", numOfSubarrays(arr3, arr3_size, k_3, threshold3));
+
+    // ========== LEETCODE 1876: SUBSTRINGS OF SIZE THREE ==========
+    printf("\n=== LEETCODE 1876: SUBSTRINGS OF SIZE THREE WITH DISTINCT CHARACTERS ===\n");
+    
+    // Test case 1: s = "xyzzaz"
+    // Expected output: 1 ("xyz")
+    char s1[] = "xyzzaz";
+    
+    printf("Test Case 1:\n");
+    printf("Input: s = \"%s\"\n", s1);
+    printf("Output: %d\n\n", countGoodSubstrings(s1));
+    
+    // Test case 2: s = "aababcabc"
+    // Expected output: 4 ("aba", "abc", "bca", "cab")
+    char s2[] = "aababcabc";
+    
+    printf("Test Case 2:\n");
+    printf("Input: s = \"%s\"\n", s2);
+    printf("Output: %d\n\n", countGoodSubstrings(s2));
+    
+    // Test case 3: s = "abc"
+    // Expected output: 1 ("abc")
+    char s3[] = "abc";
+    
+    printf("Test Case 3:\n");
+    printf("Input: s = \"%s\"\n", s3);
+    printf("Output: %d\n\n", countGoodSubstrings(s3));
+    
+    // Test case 4: s = "aaa"
+    // Expected output: 0
+    char s4[] = "aaa";
+    
+    printf("Test Case 4:\n");
+    printf("Input: s = \"%s\"\n", s4);
+    printf("Output: %d\n", countGoodSubstrings(s4));
+
+    // ========== LEETCODE 2269: FIND THE K-BEAUTY OF A NUMBER ==========
+    printf("\n=== LEETCODE 2269: FIND THE K-BEAUTY OF A NUMBER ===\n");
+    
+    // Test case 1: num = 240, k = 2
+    // Expected output: 2 (24, 40)
+    int num1 = 240;
+    int kk1 = 2;
+    
+    printf("Test Case 1:\n");
+    printf("Input: num = %d, k = %d\n", num1, kk1);
+    printf("Output: %d\n\n", divisorSubstrings(num1, kk1));
+    
+    // Test case 2: num = 430043, k = 2
+    // Expected output: 2 (43, 43)
+    int num2 = 430043;
+    int kk2 = 2;
+    
+    printf("Test Case 2:\n");
+    printf("Input: num = %d, k = %d\n", num2, kk2);
+    printf("Output: %d\n\n", divisorSubstrings(num2, kk2));
+    
+    // Test case 3: num = 3000, k = 2
+    // Expected output: 0 (no substring divides 3000)
+    int num3 = 3000;
+    int kk3 = 2;
+    
+    printf("Test Case 3:\n");
+    printf("Input: num = %d, k = %d\n", num3, kk3);
+    printf("Output: %d\n\n", divisorSubstrings(num3, kk3));
+    
+    // Test case 4: num = 1234, k = 1
+    // Expected output: 3 (1, 2, 4)
+    int num4 = 1234;
+    int kk4 = 1;
+    
+    printf("Test Case 4:\n");
+    printf("Input: num = %d, k = %d\n", num4, kk4);
+    printf("Output: %d\n", divisorSubstrings(num4, kk4));
 
     return 0;
 }

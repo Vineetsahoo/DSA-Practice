@@ -114,6 +114,29 @@ This repo is for DSA Practice
 - Understanding fixed window patterns across arrays, strings, and numbers
 - Practiced string-to-integer conversion and divisibility checking
 
+## December 13, 2025
+
+**Sorting & Searching Algorithms Practice** --- December 13, 2025, 10:00 PM
+- Created dedicated folder for sorting and searching algorithm exercises
+- Practicing various sorting algorithm implementations and optimizations
+- Working on search algorithm problems and their variations
+- Combined sorting and searching techniques for problem solving
+- Building strong foundation in fundamental algorithms
+
+**Linked List & Trees** --- December 13, 2025, 10:30 PM
+- Started learning linked list data structures and operations
+- Practicing singly and doubly linked list implementations
+- Working on tree data structure fundamentals
+- Understanding pointer manipulation and node operations
+- Exploring traversal techniques and tree algorithms
+
+**Stack & Queues** --- December 13, 2025, 11:00 PM
+- Learning stack data structure with LIFO operations
+- Implementing queue data structure with FIFO operations
+- Practicing push, pop, enqueue, and dequeue operations
+- Understanding applications of stacks and queues
+- Working on stack and queue based problem solving
+
 ## File Structure
 ```
 dsa Practice/
@@ -123,6 +146,12 @@ dsa Practice/
 │   ├── Remove_Duplicates.c
 │   ├── Plaindrome.c
 │   └── Sliding_Window.c
+├── Linked_List_&_Trees/
+│   └── (practice problems)
+├── Sorting_&_Searching_Algo/
+│   └── (practice problems)
+├── Stack_&_Queues/
+│   └── (practice problems)
 ├── Sorting_techniques/
 │   ├── Bubble_sort.c
 │   ├── Insertion_sort.c

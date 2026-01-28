@@ -137,29 +137,82 @@ This repo is for DSA Practice
 - Understanding applications of stacks and queues
 - Working on stack and queue based problem solving
 
+## January 28, 2026
+
+**LeetCode 707: Design Linked List** --- January 28, 2026, 11:15 PM
+- Implemented complete Design Linked List (LeetCode 707) in Single_linked_list/implmentation.c
+- MyLinkedList data structure with size tracking
+- get(index): Returns value at index-th node (-1 if invalid)
+- addAtHead(val): Adds node at the beginning in O(1) time
+- addAtTail(val): Appends node at the end in O(n) time
+- addAtIndex(index, val): Inserts node at index-th position with boundary validation
+- deleteAtIndex(index): Removes node at index with proper memory deallocation
+- Comprehensive test cases demonstrating all operations
+- Maintained backward compatibility with basic linked list implementation (append, printList)
+- Added freeList() function for proper memory cleanup
+
 ## File Structure
 ```
-dsa Practice/
+dsa_Practice/
 ├── .git/
 ├── .vscode/
+│   ├── settings.json
+│   └── tasks.json
 ├── 2_pointer_techniques/
-│   ├── Remove_Duplicates.c
 │   ├── Plaindrome.c
-│   └── Sliding_Window.c
+│   ├── Remove_Duplicates.c
+│   ├── Sliding_Window.c
+│   └── output/
+├── Assessment/
+│   ├── Q1.c
+│   ├── Q2.c
+│   ├── Q3.c
+│   ├── Q4.c
+│   ├── Q5.c
+│   ├── Q6.c
+│   ├── Q7.c
+│   └── output/
 ├── Linked_List_&_Trees/
-│   └── (practice problems)
+│   ├── Q1.c
+│   ├── Q2.c
+│   ├── Q3.c
+│   ├── Q4.c
+│   ├── Q5.C
+│   └── output/
+├── Marque_Company/
+│   ├── Q1.c
+│   ├── Q2.c
+│   ├── Q3.c
+│   ├── Q4.c
+│   ├── output/
+│   └── a.exe
+├── Single_linked_list/
+│   ├── implmentation.c
+│   └── a.exe
 ├── Sorting_&_Searching_Algo/
-│   └── (practice problems)
-├── Stack_&_Queues/
-│   └── (practice problems)
+│   ├── Q1.c
+│   ├── Q2.c
+│   ├── Q3.c
+│   ├── Q4.c
+│   ├── Q5.c
+│   ├── Q6.c
+│   └── output/
 ├── Sorting_techniques/
 │   ├── Bubble_sort.c
 │   ├── Insertion_sort.c
 │   ├── Merge_sort.c
 │   ├── Quick_Sort.c
 │   └── Selection_sort.c
-├── output/
-│   └── (executable files generated from compilation)
+├── Stack_&_Queues/
+│   ├── Q1.c
+│   ├── Q2.c
+│   ├── Q3.c
+│   ├── Q4.c
+│   ├── Q5.c
+│   ├── Q6.c
+│   ├── Q7.c
+│   ├── Q8.c
+│   └── output/
 ├── move_exe.bat
 ├── move_exe.ps1
 └── README.md

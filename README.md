@@ -151,6 +151,17 @@ This repo is for DSA Practice
 - Maintained backward compatibility with basic linked list implementation (append, printList)
 - Added freeList() function for proper memory cleanup
 
+## January 31, 2026
+
+**Factorial and Permutation Problems** --- January 31, 2026, 02:30 PM
+- Created Factorial/ folder for factorial-based LeetCode problems
+- Basic factorial calculation with overflow handling (up to 20!)
+- LeetCode 172: Factorial Trailing Zeroes using integer division by powers of 5
+- LeetCode 60: Permutation Sequence using factorial number system (Lehmer code)
+- getPermutation(n, k): Generates k-th lexicographic permutation of 1 to n
+- Dynamic memory allocation for result string in permutation generation
+- Time complexity: O(n²) for permutation sequence, O(log n) for trailing zeroes
+
 ## File Structure
 ```
 dsa_Practice/
@@ -172,6 +183,9 @@ dsa_Practice/
 │   ├── Q6.c
 │   ├── Q7.c
 │   └── output/
+├── Factorial/
+│   ├── Factorial.c
+│   └── a.exe
 ├── Linked_List_&_Trees/
 │   ├── Q1.c
 │   ├── Q2.c

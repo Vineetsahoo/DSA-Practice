@@ -1,239 +1,135 @@
-# DSA Practice
+# Data Structures and Algorithms Practice
 
-This repo is for DSA Practice
+A comprehensive collection of data structures and algorithms implementations in C, including solutions to various LeetCode problems and fundamental computer science concepts.
 
-## September 4, 2025
+## Overview
 
-**Insertion Sort** --- September 4, 2025, 11:42 PM
-- Implemented insertion sort algorithm
-- Added linear search algorithm  
-- Binary addition for n-bit integers
-- Decimal to binary conversion
-- Array sorting in ascending and descending order
+This repository contains implementations of essential algorithms, data structures, and compiler design concepts. Each module is organized into dedicated directories with solved problems and practice exercises.
 
-## September 6, 2025
+## Topics Covered
 
-**Selection Sort** --- September 6, 2025, 10:30 PM
-- Implemented selection sort algorithm
-- LeetCode 75: Sort Colors using selection sort
-- LeetCode 215: Kth Largest Element in an Array using selection sort
-- LeetCode 268: Missing Number using selection sort
-- Practiced finding minimum and maximum elements
-- Array sorting in ascending and descending order
+### Sorting Algorithms
+- **Bubble Sort** - O(n²) comparison-based algorithm with optimizations
+- **Insertion Sort** - Efficient for small datasets and nearly sorted arrays
+- **Selection Sort** - Simple in-place comparison sort
+- **Merge Sort** - Divide-and-conquer algorithm with O(n log n) complexity
+- **Quick Sort** - Efficient partitioning-based sorting algorithm
 
-## September 7, 2025
+### Two-Pointer Techniques
+- Array manipulation and duplicate removal
+- Palindrome validation and substring problems
+- Sliding window patterns for subarray optimization
+- Fixed and dynamic window implementations
 
-**Insertion Sort Advanced** --- September 7, 2025, 2:00 PM
-- Enhanced insertion sort algorithm with linked list implementation
-- LeetCode 147: Insertion Sort List using linked list insertion sort
-- LeetCode 148: Sort List (same algorithm as 147, different function name)
-- LeetCode 35: Search Insert Position using insertion sort concepts
-- LeetCode 704: Binary Search (optimized version of insertion sort position finding)
-- LeetCode 278: First Bad Version using insertion sort boundary finding logic
-- Implemented helper functions for linked list operations (createNode, printList, freeList)
-- Binary addition for n-bit integers (continued from previous work)
-- Understanding insertion sort applications in various problem-solving scenarios
+### Data Structures
+- **Linked Lists** - Singly linked list implementation with CRUD operations
+- **Stacks** - LIFO data structure implementations
+- **Queues** - FIFO data structure implementations
+- **Trees** - Binary tree fundamentals and traversals
 
-**Merge Sort** --- September 7, 2025, 3:30 PM
-- Implemented merge sort algorithm using divide and conquer
-- LeetCode 88: Merge Sorted Array using backward merging technique
-- Fixed array indexing bug (A[j] vs B[j])
-- Time complexity: O(n log n)
+### Algorithms
+- **Searching** - Binary search and linear search implementations
+- **Factorial Computations** - Factorial calculations and related problems
+- **Sorting & Searching** - Combined algorithm applications
 
-## September 8, 2025
+### Compiler Design
+- **Lexical Analysis** - Flex-based lexer for tokenizing source code
+- Token recognition for keywords, identifiers, operators, and symbols
 
-**Merge Sort with Linked List** --- September 8, 2025, 10:30 PM
-- Implemented merge sort for singly linked list
-- Created helper functions: createNode, printList, freeList
-- Simple logic approach: findMiddle using node counting (no fast/slow pointers)
-- mergeTwoSortedLists function to merge two sorted linked lists
-- mergeSortLinkedList recursive function for divide and conquer
-- Successfully sorted linked list: 64→34→25→12→22→11→90 to 11→12→22→25→34→64→90
+## Project Structure
 
-## September 9, 2025
-
-**Merge Sort with LeetCode** --- September 9, 2025, 4:15 PM
-- LeetCode 21: Merge Two Sorted Lists using merge sort merge step
-- LeetCode 23: Merge K Sorted Lists using divide and conquer approach
-- Enhanced Merge_sort.c with LeetCode solutions
-- Fixed code bugs and variable naming conflicts
-
-**Bubble Sort** --- September 9, 2025, 8:30 PM
-- Implemented bubble sort algorithm with optimized version
-- LeetCode 977: Squares of Sorted Array using bubble sort
-- LeetCode 1051: Height Checker using bubble sort
-- Enhanced Bubble_sort.c with LeetCode solutions
-
-**Quick Sort** --- September 9, 2025, 10:05 PM
-- Implemented quick sort algorithm with partition function
-- LeetCode 912: Sort an Array using quick sort
-- LeetCode 347: Top K Frequent Elements using quick sort with frequency counting
-- Enhanced Quick_Sort.c with LeetCode solutions
-- Used parallel arrays for frequency-based sorting
-
-## September 10, 2025
-
-**Project Organization** --- September 10, 2025, 12:01 AM
-- Created automation scripts for better project organization
-- Added compile.bat and compile.ps1 for automated compilation
-- Added move_exe.bat and move_exe.ps1 for organizing executable files
-- Created output folder to store all generated executable files
-- Improved project structure and file management
-
-**Two Pointer Techniques** --- September 10, 2025, 10:33 AM
-- Started practicing array-based two pointer techniques
-- LeetCode 26: Remove Duplicates from Sorted Array using two pointer approach
-- Enhanced Remove_Duplicates.c with LeetCode solution
-- Created 2_pointer_techniques folder for organized practice
-
-## September 27, 2025
-
-**Palindrome Problems Complete** --- September 27, 2025, 10:30 PM
-- Advanced two pointer techniques for palindrome problems
-- LeetCode 125: Valid Palindrome with alphanumeric filtering and helper functions
-- LeetCode 680: Valid Palindrome II with one character deletion strategy
-- LeetCode 647: Palindromic Substrings using expand around centers technique
-- Created comprehensive Plaindrome.c with multiple palindrome algorithms
-- Implemented helper functions: isAlphanumeric(), toLowerCase(), expandAroundCenter()
-- Mastered different two-pointer patterns: validation, modification, and counting
-
-## December 3-4, 2025
-
-**Sliding Window Technique** --- December 3, 2025, 11:30 PM
-- Started learning sliding window pattern for subarray problems
-- Implemented basic sliding window for maximum sum of subarray
-- LeetCode 643: Maximum Average Subarray I using fixed window sliding technique
-- Created Sliding_Window.c with comprehensive implementations
-
-**Sliding Window Advanced** --- December 4, 2025, 11:15 AM
-- LeetCode 1343: Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold
-- LeetCode 1876: Substrings of Size Three with Distinct Characters
-- LeetCode 2269: Find the K-Beauty of a Number
-- Mastered counting subarrays that meet specific conditions
-- Learned optimization: comparing sums instead of calculating averages
-- Understanding fixed window patterns across arrays, strings, and numbers
-- Practiced string-to-integer conversion and divisibility checking
-
-## December 13, 2025
-
-**Sorting & Searching Algorithms Practice** --- December 13, 2025, 10:00 PM
-- Created dedicated folder for sorting and searching algorithm exercises
-- Practicing various sorting algorithm implementations and optimizations
-- Working on search algorithm problems and their variations
-- Combined sorting and searching techniques for problem solving
-- Building strong foundation in fundamental algorithms
-
-**Linked List & Trees** --- December 13, 2025, 10:30 PM
-- Started learning linked list data structures and operations
-- Practicing singly and doubly linked list implementations
-- Working on tree data structure fundamentals
-- Understanding pointer manipulation and node operations
-- Exploring traversal techniques and tree algorithms
-
-**Stack & Queues** --- December 13, 2025, 11:00 PM
-- Learning stack data structure with LIFO operations
-- Implementing queue data structure with FIFO operations
-- Practicing push, pop, enqueue, and dequeue operations
-- Understanding applications of stacks and queues
-- Working on stack and queue based problem solving
-
-## January 28, 2026
-
-**LeetCode 707: Design Linked List** --- January 28, 2026, 11:15 PM
-- Implemented complete Design Linked List (LeetCode 707) in Single_linked_list/implmentation.c
-- MyLinkedList data structure with size tracking
-- get(index): Returns value at index-th node (-1 if invalid)
-- addAtHead(val): Adds node at the beginning in O(1) time
-- addAtTail(val): Appends node at the end in O(n) time
-- addAtIndex(index, val): Inserts node at index-th position with boundary validation
-- deleteAtIndex(index): Removes node at index with proper memory deallocation
-- Comprehensive test cases demonstrating all operations
-- Maintained backward compatibility with basic linked list implementation (append, printList)
-- Added freeList() function for proper memory cleanup
-
-## January 31, 2026
-
-**Factorial and Permutation Problems** --- January 31, 2026, 02:30 PM
-- Created Factorial/ folder for factorial-based LeetCode problems
-- Basic factorial calculation with overflow handling (up to 20!)
-- LeetCode 172: Factorial Trailing Zeroes using integer division by powers of 5
-- LeetCode 60: Permutation Sequence using factorial number system (Lehmer code)
-- getPermutation(n, k): Generates k-th lexicographic permutation of 1 to n
-- Dynamic memory allocation for result string in permutation generation
-- Time complexity: O(n²) for permutation sequence, O(log n) for trailing zeroes
-
-## File Structure
 ```
 dsa_Practice/
-├── .git/
-├── .vscode/
-│   ├── settings.json
-│   └── tasks.json
-├── 2_pointer_techniques/
-│   ├── Plaindrome.c
-│   ├── Remove_Duplicates.c
-│   ├── Sliding_Window.c
+├── 2_pointer_techniques/     # Two-pointer algorithm implementations
+│   ├── Plaindrome.c          # Palindrome validation problems
+│   ├── Remove_Duplicates.c   # Array duplicate removal
+│   ├── Sliding_Window.c      # Sliding window pattern problems
 │   └── output/
-├── Assessment/
-│   ├── Q1.c
-│   ├── Q2.c
-│   ├── Q3.c
-│   ├── Q4.c
-│   ├── Q5.c
-│   ├── Q6.c
-│   ├── Q7.c
-│   └── output/
-├── Factorial/
-│   ├── Factorial.c
-│   └── a.exe
-├── Linked_List_&_Trees/
-│   ├── Q1.c
-│   ├── Q2.c
-│   ├── Q3.c
-│   ├── Q4.c
-│   ├── Q5.C
-│   └── output/
-├── Marque_Company/
-│   ├── Q1.c
-│   ├── Q2.c
-│   ├── Q3.c
-│   ├── Q4.c
-│   ├── output/
-│   └── a.exe
-├── Single_linked_list/
-│   ├── implmentation.c
-│   └── a.exe
-├── Sorting_&_Searching_Algo/
-│   ├── Q1.c
-│   ├── Q2.c
-│   ├── Q3.c
-│   ├── Q4.c
-│   ├── Q5.c
-│   ├── Q6.c
-│   └── output/
-├── Sorting_techniques/
+├── Assessment/               # Assessment problems
+├── Compiler_Design/          # Compiler construction
+│   ├── lexer.l              # Flex lexical analyzer
+│   ├── lex.yy.c             # Generated lexer C code
+│   ├── lexer.exe            # Compiled lexer executable
+│   └── test_input.txt       # Sample input file
+├── Factorial/                # Factorial-related problems
+│   └── Factorial.c          # LeetCode 172, 60
+├── Linked_List_&_Trees/      # Linked list and tree problems
+├── Marque_Company/           # Company-specific problems
+├── Single_linked_list/       # Linked list implementation
+│   └── implmentation.c      # LeetCode 707: Design Linked List
+├── Sorting_&_Searching_Algo/ # Combined sorting and searching
+├── Sorting_techniques/       # Sorting algorithm implementations
 │   ├── Bubble_sort.c
 │   ├── Insertion_sort.c
 │   ├── Merge_sort.c
 │   ├── Quick_Sort.c
 │   └── Selection_sort.c
-├── Stack_&_Queues/
-│   ├── Q1.c
-│   ├── Q2.c
-│   ├── Q3.c
-│   ├── Q4.c
-│   ├── Q5.c
-│   ├── Q6.c
-│   ├── Q7.c
-│   ├── Q8.c
-│   └── output/
-├── move_exe.bat
-├── move_exe.ps1
+├── Stack_&_Queues/           # Stack and queue implementations
+├── move_exe.bat              # Batch script for file organization
+├── move_exe.ps1              # PowerShell script for file organization
 └── README.md
 ```
 
-## Usage Instructions
+## Build Instructions
 
-### Organization Scripts
-- **Move Executables**: `.\move_exe.bat` or `.\move_exe.ps1`
-  - Automatically moves all .exe files to output folder
+### Compiling C Programs
+
+**Using VS Code Task:**
+```
+Ctrl+Shift+B (Windows/Linux) or Cmd+Shift+B (Mac)
+```
+
+**Using GCC (MSYS2):**
+```powershell
+gcc -Wall -Wextra -g3 <source_file>.c -o output/<executable>.exe
+```
+
+### Compiling Flex Lexer
+
+**Prerequisites:**
+- MSYS2 with flex package installed
+- GCC compiler
+
+**Steps:**
+1. Generate lexer C code:
+   ```powershell
+   C:\msys64\usr\bin\flex.exe lexer.l
+   ```
+
+2. Compile the generated code:
+   ```powershell
+   gcc lex.yy.c -o lexer.exe
+   ```
+
+3. Run the lexer:
+   ```powershell
+   .\lexer.exe
+   ```
+   Enter the input filename when prompted.
+
+## Utility Scripts
+
+### Move Executables
+Automatically organize compiled executables into output folders:
+
+**Windows Batch:**
+```cmd
+move_exe.bat
+```
+
+**PowerShell:**
+```powershell
+.\move_exe.ps1
+```
+
+## Environment
+
+- **Language:** C
+- **Compiler:** GCC (MSYS2 UCRT64)
+- **Lexer Generator:** Flex 2.6.4
+- **Build System:** VS Code Tasks
+- **Platform:** Windows
+
+## License
+
+This project is for educational purposes.

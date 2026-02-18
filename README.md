@@ -34,7 +34,28 @@ This repository contains implementations of essential algorithms, data structure
 
 ### Compiler Design
 - **Lexical Analysis** - Flex-based lexer for tokenizing source code
+- **Calculator Parser** - Bison/Yacc parser with mathematical expression evaluation
+- **Left Recursion Elimination** - Grammar transformation for parser optimization
 - Token recognition for keywords, identifiers, operators, and symbols
+- Support for arithmetic operations, power, and trigonometric functions (sinh, cosh, asin, acos)
+
+## Featured Projects
+
+### Mathematical Expression Calculator
+A fully functional calculator built using **Bison** (parser generator) and **Flex** (lexer generator) that evaluates mathematical expressions with:
+
+**Supported Operations:**
+- Basic arithmetic: `+`, `-`, `*`, `/`
+- Power operator: `^`
+- Parentheses for precedence: `( )`
+- Trigonometric functions: `SINH()`, `COSH()`, `ASIN()`, `ACOS()`
+- Floating-point precision support
+
+**Implementation Details:**
+- Uses LALR(1) parsing with Bison
+- Proper operator precedence and associativity
+- Error handling for division by zero
+- Type-safe union types for semantic values
 
 ## Project Structure
 
@@ -47,6 +68,12 @@ dsa_Practice/
 │   └── output/
 ├── Assessment/               # Assessment problems
 ├── Compiler_Design/          # Compiler construction
+│   ├── calculator.y         # Bison parser for calculator
+│   ├── calculator.l         # Flex lexer for calculator
+│   ├── calculator.tab.c     # Generated parser C code
+│   ├── calculator.tab.h     # Generated parser header
+│   ├── calculator.exe       # Compiled calculator executable
+│   ├── expt5.c              # Left recursion elimination
 │   ├── lexer.l              # Flex lexical analyzer
 │   ├── lex.yy.c             # Generated lexer C code
 │   ├── lexer.exe            # Compiled lexer executable
@@ -107,6 +134,52 @@ gcc -Wall -Wextra -g3 <source_file>.c -o output/<executable>.exe
    ```
    Enter the input filename when prompted.
 
+### Compiling Bison/Flex Calculator
+
+**Prerequisites:**
+- MSYS2 with bison and flex packages installed
+- GCC compiler
+
+**Installation (if not already installed):**
+```powershell
+C:\msys64\usr\bin\bash.exe -lc "pacman -S --noconfirm bison flex"
+```
+
+**Compilation Steps:**
+
+**Option 1 - Step by Step:**
+```powershell
+# Add MSYS2 to PATH
+$env:Path = "C:\msys64\usr\bin;C:\msys64\ucrt64\bin;$env:Path"
+
+# Generate parser from Bison file
+bison -d calculator.y
+
+# Generate lexer from Flex file
+flex calculator.l
+
+# Compile the generated C files
+gcc calculator.tab.c lex.yy.c -o calculator.exe -lm
+```
+
+**Option 2 - Single Command:**
+```powershell
+$env:Path = "C:\msys64\usr\bin;C:\msys64\ucrt64\bin;$env:Path"; bison -d calculator.y; flex calculator.l; gcc calculator.tab.c lex.yy.c -o calculator.exe -lm
+```
+
+**Running the Calculator:**
+```powershell
+.\calculator.exe
+```
+
+**Example Expressions:**
+- `2 + 3` → Result = 5.000000
+- `10.5 * 2` → Result = 21.000000
+- `2 ^ 3` → Result = 8.000000
+- `SINH(1)` → Result = 1.175201
+- `(5 + 3) * 2` → Result = 16.000000
+- Press Ctrl+C to exit
+
 ## Utility Scripts
 
 ### Move Executables
@@ -127,6 +200,7 @@ move_exe.bat
 - **Language:** C
 - **Compiler:** GCC (MSYS2 UCRT64)
 - **Lexer Generator:** Flex 2.6.4
+- **Parser Generator:** Bison 3.8.2
 - **Build System:** VS Code Tasks
 - **Platform:** Windows
 

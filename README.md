@@ -39,6 +39,12 @@ This repository contains implementations of essential algorithms, data structure
 - Token recognition for keywords, identifiers, operators, and symbols
 - Support for arithmetic operations, power, and trigonometric functions (sinh, cosh, asin, acos)
 
+### Software Architecture Design Patterns (Python)
+- **Singleton Pattern** - Ensures a class has only one instance and provides global access
+- **Factory Pattern** - Creates objects without specifying exact classes
+- **Abstract Pattern** - Provides an interface for creating families of related objects
+- **Composite Pattern** - Composes objects into tree structures for part-whole hierarchies
+
 ## Featured Projects
 
 ### Mathematical Expression Calculator
@@ -84,6 +90,11 @@ dsa_Practice/
 ├── Marque_Company/           # Company-specific problems
 ├── Single_linked_list/       # Linked list implementation
 │   └── implmentation.c      # LeetCode 707: Design Linked List
+├── Software_Arch/            # Software architecture design patterns (Python)
+│   ├── Abstract.py          # Abstract Factory pattern
+│   ├── Composite.py         # Composite pattern
+│   ├── Factory.py           # Factory pattern
+│   └── Singleton.py         # Singleton pattern
 ├── Sorting_&_Searching_Algo/ # Combined sorting and searching
 ├── Sorting_techniques/       # Sorting algorithm implementations
 │   ├── Bubble_sort.c
@@ -180,6 +191,26 @@ $env:Path = "C:\msys64\usr\bin;C:\msys64\ucrt64\bin;$env:Path"; bison -d calcula
 - `(5 + 3) * 2` → Result = 16.000000
 - Press Ctrl+C to exit
 
+### Running Python Design Patterns
+
+**Prerequisites:**
+- Python 3.x installed
+
+**Running a Pattern:**
+```powershell
+python <pattern_file>.py
+```
+
+**Examples:**
+```powershell
+python .\Software_Arch\Singleton.py
+python .\Software_Arch\Factory.py
+python .\Software_Arch\Abstract.py
+python .\Software_Arch\Composite.py
+```
+
+Each pattern demonstrates its implementation with console output showing the pattern in action.
+
 ## Utility Scripts
 
 ### Move Executables
@@ -197,7 +228,7 @@ move_exe.bat
 
 ## Environment
 
-- **Language:** C
+- **Language:** C, Python
 - **Compiler:** GCC (MSYS2 UCRT64)
 - **Lexer Generator:** Flex 2.6.4
 - **Parser Generator:** Bison 3.8.2

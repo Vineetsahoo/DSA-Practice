@@ -36,6 +36,7 @@ This repository contains implementations of essential algorithms, data structure
 - **Lexical Analysis** - Flex-based lexer for tokenizing source code
 - **Calculator Parser** - Bison/Yacc parser with mathematical expression evaluation
 - **Left Recursion Elimination** - Grammar transformation for parser optimization
+- **First and Follow Sets Calculator** - Interactive tool for computing First and Follow sets for context-free grammars
 - Token recognition for keywords, identifiers, operators, and symbols
 - Support for arithmetic operations, power, and trigonometric functions (sinh, cosh, asin, acos)
 
@@ -63,6 +64,56 @@ A fully functional calculator built using **Bison** (parser generator) and **Fle
 - Error handling for division by zero
 - Type-safe union types for semantic values
 
+### First and Follow Sets Calculator
+An interactive C program that computes **First** and **Follow** sets for context-free grammars, essential for building predictive parsers in compiler construction.
+
+**Features:**
+- Interactive input of production rules
+- Automatic computation of First sets for non-terminals
+- Automatic computation of Follow sets for non-terminals
+- Support for epsilon (ε) productions using `#` symbol
+- Duplicate elimination in result sets
+- Clear, formatted output
+
+**Input Format:**
+- Production rules: `A=aBc` (where A is non-terminal, aBc is production)
+- Epsilon production: `A=#`
+- Terminals: lowercase letters and symbols
+- Non-terminals: uppercase letters
+
+**Example Usage:**
+```
+Enter the number of production rules: 8
+Enter the production rules (format: A=aBc or A=#):
+Production 1: E=TR
+Production 2: R=+TR
+Production 3: R=#
+Production 4: T=FY
+Production 5: Y=*FY
+Production 6: Y=#
+Production 7: F=(E)
+Production 8: F=i
+
+Output:
+First(E) = { (, i }
+First(R) = { +, # }
+First(T) = { (, i }
+First(Y) = { *, # }
+First(F) = { (, i }
+
+Follow(E) = { $, ) }
+Follow(R) = { $, ) }
+Follow(T) = { +, $, ) }
+Follow(Y) = { +, $, ) }
+Follow(F) = { *, +, $, ) }
+```
+
+**Implementation Details:**
+- Recursive algorithm for First set computation
+- Follow set computation using First sets
+- Handles epsilon transitions correctly
+- Start symbol automatically gets `$` in its Follow set
+
 ## Project Structure
 
 ```
@@ -80,6 +131,8 @@ dsa_Practice/
 │   ├── calculator.tab.h     # Generated parser header
 │   ├── calculator.exe       # Compiled calculator executable
 │   ├── expt5.c              # Left recursion elimination
+│   ├── expt7.c              # First and Follow sets calculator
+│   ├── expt8.c              # Compiler design experiment 8
 │   ├── lexer.l              # Flex lexical analyzer
 │   ├── lex.yy.c             # Generated lexer C code
 │   ├── lexer.exe            # Compiled lexer executable

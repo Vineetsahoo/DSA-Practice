@@ -55,7 +55,21 @@ extern int yydebug;
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
     UMINUS = 258,                  /* UMINUS  */
-    NUMBER = 259                   /* NUMBER  */
+    NUMBER = 259,                  /* NUMBER  */
+    SIN = 260,                     /* SIN  */
+    COS = 261,                     /* COS  */
+    TAN = 262,                     /* TAN  */
+    COT = 263,                     /* COT  */
+    SEC = 264,                     /* SEC  */
+    COSEC = 265,                   /* COSEC  */
+    LOG = 266,                     /* LOG  */
+    LOG2 = 267,                    /* LOG2  */
+    LOG10 = 268,                   /* LOG10  */
+    EXP = 269,                     /* EXP  */
+    SQRT = 270,                    /* SQRT  */
+    ABS = 271,                     /* ABS  */
+    FLOOR = 272,                   /* FLOOR  */
+    CEIL = 273                     /* CEIL  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif

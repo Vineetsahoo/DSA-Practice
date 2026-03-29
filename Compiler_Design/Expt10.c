@@ -137,7 +137,7 @@ int main() {
     closure(0);
     state_count = 1;
 
-    // ✅ FIXED STATE GENERATION LOOP
+    //  FIXED STATE GENERATION LOOP
     int processed = 0;
 
     while (processed < state_count) {

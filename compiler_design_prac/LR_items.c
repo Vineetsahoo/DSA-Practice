@@ -57,6 +57,4 @@ void compute_goto(int state){
                 symbols[count++] = c;
         }
     }
-
-    for (int s =0;s < count)
 }
